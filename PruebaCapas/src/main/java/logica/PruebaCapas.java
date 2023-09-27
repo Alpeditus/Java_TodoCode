@@ -1,16 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package logica;
 
-/**
- *
- * @author CrCastillo
- */
+import igu.Pantalla;
+
 public class PruebaCapas {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Pantalla panta = new Pantalla();
+        panta.setVisible(true);
+        panta.setLocationRelativeTo(null);
+        
+        
+        
     }
 }
