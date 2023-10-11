@@ -42,6 +42,12 @@ public class Pantalla extends javax.swing.JFrame {
 
         jLabel2.setText("Ingrese un texto:");
 
+        txt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt1ActionPerformed(evt);
+            }
+        });
+
         jLabel3.setText("El texto que ud ingresó es:");
 
         btn.setText("Copiar");
@@ -130,6 +136,10 @@ public class Pantalla extends javax.swing.JFrame {
         txt2.setText("");        
         
     }//GEN-LAST:event_btnLimpiarActionPerformed
+
+    private void txt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt1ActionPerformed
 
     
     
