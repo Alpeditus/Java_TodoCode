@@ -5,11 +5,14 @@ import java.util.Scanner;
 public class ReservaAsientos {
 
     public static void main(String[] args) {
+        
+        //Declaración de variables.
         char asientos[][] = new char[10][10];
         boolean bandera = false;
         Scanner leer = new Scanner(System.in);
         int fila, asiento;
         String respuesta;
+        String verMapa;
 
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
@@ -20,10 +23,14 @@ public class ReservaAsientos {
         System.out.println("-------BIENVENIDO AL SISTEMA DE RESERVAS-------");
 
         while (bandera != true) {
-            System.out.println("Desea ver los asientos disponibles?");
+            System.out.println("Desea ver los asientos disponibles? S: Si, cualquier otra letra: No");
             //acá vamos a llamar al método.
+            verMapa = leer.next();
             
-            dibujarMapa(asientos);
+            if (verMapa.equalsIgnoreCase("S")) {
+            dibujarMapa(asientos);    
+            }
+            
 
             System.out.println("Ingrese Fila y Asiento a reservar");
             System.out.print("Fila (entre 0 y 9): ");
